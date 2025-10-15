@@ -3,6 +3,176 @@
 <%@ include file="layout/header.jsp" %>
 <%@ taglib prefix="fn" uri="jakarta.tags.functions" %>
 
+<style>
+/* Tổng thể trang */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.home-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Lưới chính: 2 cột */
+.home-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+/* Khu vực nội dung chính (trái) */
+.home-main .content {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* Mỗi bài viết */
+.news-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-item h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #0078D7;
+}
+
+.news-item h3 a {
+  text-decoration: none;
+  color: #0078D7;
+  transition: color 0.2s;
+}
+
+.news-item h3 a:hover {
+  color: #0056a3;
+}
+
+.news-item p {
+  margin: 8px 0;
+  color: #444;
+  line-height: 1.5;
+}
+
+.news-item small {
+  display: block;
+  color: #777;
+  font-size: 13px;
+}
+
+/* Cột bên phải */
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Khối panel chung */
+.panel {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+.panel-h {
+  font-weight: bold;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.panel-h.yellow {
+  background: #f5b301;
+}
+
+.panel-h.gray {
+  background: #4a4a4a;
+}
+
+.panel-h.green {
+  background: #1c9d5a;
+}
+
+/* Danh sách bên trong panel */
+.panel-b {
+  padding: 10px 15px;
+}
+
+.panel-b ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.panel-b li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+.panel-b li:last-child {
+  border-bottom: none;
+}
+
+.panel-b a {
+  text-decoration: none;
+  color: #333;
+}
+
+.panel-b a:hover {
+  color: #0078D7;
+}
+
+/* Newsletter */
+.panel-b form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.panel-b input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.panel-b button {
+  background-color: #0078D7;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.panel-b button:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 900px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+  aside {
+    order: -1;
+  }
+}
+</style>
 
 
 

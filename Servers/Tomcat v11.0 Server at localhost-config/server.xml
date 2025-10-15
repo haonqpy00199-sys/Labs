@@ -136,7 +136,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Lab4" path="/Lab4" reloadable="true" source="org.eclipse.jst.jee.server:Lab4"/><Context docBase="Asignment_PY0099_HaoNQ" path="/Asignment_PY0099_HaoNQ" reloadable="true" source="org.eclipse.jst.jee.server:Asignment_PY0099_HaoNQ"/><Context docBase="Lab3" path="/Lab3" reloadable="true" source="org.eclipse.jst.jee.server:Lab3"/></Host>
+      <Context docBase="Lab4" path="/Lab4" reloadable="true" source="org.eclipse.jst.jee.server:Lab4"/><Context docBase="Asignment_PY0099_HaoNQ" path="/Asignment_PY0099_HaoNQ" reloadable="true" source="org.eclipse.jst.jee.server:Asignment_PY0099_HaoNQ"/><Context docBase="Lab3" path="/Lab3" reloadable="true" source="org.eclipse.jst.jee.server:Lab3"/><Context docBase="Lab_5" path="/Lab_5" reloadable="true" source="org.eclipse.jst.j2ee.server:Lab_5"/><Context docBase="Lab_6" path="/Lab_6" reloadable="true" source="org.eclipse.jst.j2ee.server:Lab_6"/></Host>
     </Engine>
   </Service>
 </Server>
